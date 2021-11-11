@@ -1,0 +1,25 @@
+._users{
+    p {
+        font-size: 14px;
+
+        .name {
+            color: #000;
+        }
+    }
+    .status {
+        font-size: 12px;
+        position: relative;
+        padding-left: 25px;
+
+        &::before {
+            content: ' ';
+            padding: 4px;
+            background: #7FCC6D;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

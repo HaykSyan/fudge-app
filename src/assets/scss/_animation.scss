@@ -1,0 +1,149 @@
+.animate-body {
+    .__main {
+        background-position: top, 45% 50%;
+        animation-name: MOVE-BODY-BG;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease; 
+        animation-delay: 0s;
+        animation-play-state: running;
+
+        ._home {
+            >div {
+                flex: auto;
+
+                &:last-child {
+                    svg {
+                        display: none;
+                    }
+                }
+            }
+
+            ._info {
+                opacity: 1;
+                height: auto;
+                bottom: 50%;
+                transform: translateY(50%);
+
+                .btn {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+
+    .__dashboard {
+        &_content {
+            .content {
+                animation-name: MOVE-BODY-DASHBOARD;
+                animation-duration: 3s;
+                animation-iteration-count: 1;
+                animation-timing-function: ease; 
+                animation-delay: 0;
+                animation-play-state: running;
+
+                > * {
+                    animation-name: FADE_IN;
+                    animation-duration: 3s;
+                    animation-iteration-count: 1;
+                    animation-timing-function: ease; 
+                    animation-delay: 0;
+                    animation-play-state: running;
+                }
+            }
+        }
+
+        .__navigation_section {
+            animation-name: FADE_IN;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease; 
+            animation-delay: 0;
+            animation-play-state: running;
+        }
+    }
+}
+
+@keyframes MOVE-BODY-BG {
+    from {
+      background-position: top, 45% 40%;
+    }
+    to { 
+      background-position: top, 45% 50%;
+    }
+ }
+
+ @keyframes MOVE-BODY-DASHBOARD {
+     0% {
+       padding: 0;
+       width: 22px;
+       height: 8px;
+       overflow: hidden;
+       border-radius: 9px;
+     }
+     5% {
+        padding: 0;
+       width: 22px;
+       height: 8px;
+       overflow: hidden;
+       border-radius: 9px;
+     }
+     10% {
+       padding: 0;
+       width: 22px;
+       height: 8px;
+       overflow: hidden;
+       border-radius: 9px;
+     }
+     40% { 
+       padding: 0;
+       width: 100%;
+       height: 8px;
+       overflow: hidden;
+       border-radius: 9px;
+     }
+
+     45% { 
+       padding: 0;
+       width: 100%;
+       height: 8px;
+       overflow: hidden;
+       border-radius: 9px;
+     }
+     60% {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        overflow: hidden;
+        padding: 30px 50px 60px 50px;
+     }
+     100% {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        overflow: hidden;
+        padding: 30px 50px 60px 50px;
+     }
+  }
+
+
+ @keyframes FADE_IN {
+    0% {
+        display: none;
+        opacity: 0;
+        height: 0;
+    }
+    50% { 
+        display: none;
+        opacity: 0;
+        height: 0;
+    }
+    80% { 
+        display: none;
+        opacity: 0;
+    }
+    100% {
+        display: none;
+        opacity: 1;
+    }
+ }

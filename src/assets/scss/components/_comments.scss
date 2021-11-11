@@ -1,0 +1,10 @@
+.__comments_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    ._body {
+        max-height: 450px;
+        overflow-x: auto;
+    }
+}

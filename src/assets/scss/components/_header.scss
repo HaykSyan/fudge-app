@@ -1,0 +1,40 @@
+.__header {
+    margin-bottom: 35px;
+    &_title {
+        margin-top: 18px;
+        h3 {
+            white-space: nowrap;
+            margin-right: 19px;
+            font-size: 30px;
+        }
+    }
+
+    ._user_info {
+        font-size: 20px;
+        flex: 1 1 auto;
+        > div {
+            margin-left: 18px;
+        }
+    }
+    ._actions {
+        font-size: 14px;
+        ul {
+            list-style: none;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                cursor: pointer;
+                &:first-child {
+                    margin-right: 60px;
+                }
+
+                svg {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

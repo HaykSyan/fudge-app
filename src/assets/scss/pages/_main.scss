@@ -1,0 +1,49 @@
+.__main {
+    background: url("../../images/bg-cover.png") no-repeat top fixed, url("../../images/bg-main-image.png") 45% 40% no-repeat fixed;
+    height: 100vh;
+    ._home {
+        h1 {
+            font-size: 70px;
+        }
+        p {
+            font-size: 26px;
+            color: $main_secondary_color;
+        }
+        color: $main_color;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 0;
+
+        ._info {
+            transition: 1.2s ease;
+            opacity: 0;
+            height: -1px;
+            position: absolute;
+            bottom: 0;
+
+            .btn {
+                transition: 1.3s ease;
+                font-size: 26px;
+                padding: 15px 55px;
+                margin-top: -140px;
+            }
+        }
+
+        > div {
+            transition: flex 1s;
+            display: flex;
+            align-items: center;
+
+            &:first-child {
+                flex: 1;
+            }
+            &:last-child {
+                flex: 0;
+                z-index: 1;
+            }
+        }
+    }
+}

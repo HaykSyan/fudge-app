@@ -1,0 +1,7 @@
+.arrow_icon {
+    cursor: pointer;
+    transition: .5s;
+    &:hover {
+        opacity: .5;
+    }
+}

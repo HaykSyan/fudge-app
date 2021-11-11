@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import "./variables";
+@import "./colors";
+@import "./components/icon";
+@import "./components/navigation";
+@import "./components/header";
+@import "./components/box";
+@import "./components/comments";
+@import "./components/form";
+@import "./pages/main";
+@import "./pages/dashboard";
+@import "./pages/industry_news";
+@import "./pages/top_comments";
+@import "./pages/users";
+@import "./animation";
+
+body {
+    background: url("../images/bg-cover.png") no-repeat top fixed, url("../images/bg-main-image.png") 45% 50% no-repeat fixed;
+    height: 100%;
+    min-height: 100vh;
+    color: $default_txt_color;
+    font-family: $main-font;
+    background-size: cover;
+}
+
+

@@ -1,0 +1,47 @@
+.__navigation_section {
+    padding: 28px 49px 28px 35px;
+    width: 350px;
+
+    .logo {
+        width: 127px;
+    }
+
+    ul {
+        margin-top: 138px;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        a.active {
+            li {
+                background-color: #FFFFFF1A;
+            }
+        }
+        li {
+            padding: 20px 20px 20px 35px;
+            color: $main_color;
+            font-size: 18px;
+            line-height: 22px;
+            transition: .3s ease;
+            border-radius: 17px;
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2px;
+
+            i {
+                margin-right: 24px;
+            }
+
+            &:hover {
+                background-color: #FFFFFF1A;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 1006px) {
+        display: none !important;
+    }
+}

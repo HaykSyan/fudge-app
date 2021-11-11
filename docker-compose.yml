@@ -1,0 +1,13 @@
+version: '3.3'
+services: 
+  fudge-app:
+    restart: unless-stopped
+    env_file: ./.env
+    environment: 
+      - $REACT_APP_API_URL=$REACT_APP_API_URL
+      - $REACT_APP_API_VERSION=$REACT_APP_API_VERSION
+    build: .
+    expose:
+      - "3000"
+    ports:
+      - "3000:3000"
